@@ -1,0 +1,52 @@
+## Scientific Question:
+How similar are the genes that are used for the UV-repair pathway (specifically in nucleotide excision repair) in humans?
+#### Background Information: Waiting on feedback before I start fully commiting to this proposal/methods.
+
+
+## Hypothesis:
+If humans have two subcategories of nucleotide excision repair genes, then the genes responsible for those two categories will be more similar to each other.
+
+Part 1: Load Packages
+
+import pandas as pd
+import numpy as np
+import scipy as scip
+import os
+import pubchempy as pcp
+import mols2grid
+import nglview as ngl
+from IPython.display import Image
+from rdkit import Chem
+from rdkit import DataStructs
+import itertools
+import matplotlib.pyplot as plt
+import numpy as np
+from rdkit.Chem import rdMolAlign
+from rdkit.Chem.rdMolAlign import AlignMol
+from rdkit.Chem import rdmolfiles
+from rdkit.Chem import PandasTools
+from rdkit.Chem.rdmolfiles import ForwardSDMolSupplier
+
+Part 2: Load Data
+
+SDFFile = "Structure2D_CID_90470068.sdf"
+PI3KLigs = PandasTools.LoadSDF(SDFFile)
+# define a global variable lig_len
+lig_len = len(PI3KLigs)
+print(PI3KLigs)
+
+Part 3: Sequence Alignment
+
+#code here
+
+Part 4: RNAseq
+
+#code here
+
+Part 5: Heat map
+
+#code here
+
+Part 6: K-means clustering
+
+#code here
